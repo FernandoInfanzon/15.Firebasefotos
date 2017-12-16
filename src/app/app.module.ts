@@ -7,7 +7,7 @@ import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 import { CargaComponent } from './components/carga/carga.component';
 import { FotosComponent } from './components/fotos/fotos.component';
-import {APP_ROUTING} from './app.routes';
+import { APP_ROUTING} from './app.routes';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
 
