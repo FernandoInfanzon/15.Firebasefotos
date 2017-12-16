@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
+import { AngularFireModule } from 'angularfire2';
+import { environment } from '../environments/environment';
 
 import { AppComponent } from './app.component';
 import { CargaComponent } from './components/carga/carga.component';
@@ -19,7 +20,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
   ],
   imports: [
     BrowserModule,
-    APP_ROUTING
+    APP_ROUTING,
+    AngularFireModule.initializeApp(environment.firebase )
   ],
   providers: [],
   bootstrap: [AppComponent]
