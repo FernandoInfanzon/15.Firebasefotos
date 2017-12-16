@@ -1,12 +1,12 @@
-import { RouterModule, Routes } from '@angular/router';
+import {RouterModule, Routes} from '@angular/router';
 import { CargaComponent } from './components/carga/carga.component';
 import { FotosComponent } from './components/fotos/fotos.component';
 
 
-const app_routes: Routes = [
+const APP_ROUTES: Routes = [
     {path: 'fotos', component: FotosComponent},
     {path: 'carga', component: CargaComponent},
     {path: '**', pathMatch: 'full', redirectTo: 'fotos'}
 ];
 
-export const app_routing = RouterModule.forRoot(app_routes);
+export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES);

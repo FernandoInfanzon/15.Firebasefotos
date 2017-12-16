@@ -6,7 +6,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CargaComponent } from './components/carga/carga.component';
 import { FotosComponent } from './components/fotos/fotos.component';
-import { app_routing } from './app.routes';
+import {APP_ROUTING} from './app.routes';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
 
@@ -19,7 +19,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
   ],
   imports: [
     BrowserModule,
-    app_routing
+    APP_ROUTING
   ],
   providers: [],
   bootstrap: [AppComponent]
