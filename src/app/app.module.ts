@@ -13,18 +13,23 @@ import { FotosComponent } from './components/fotos/fotos.component';
 import { APP_ROUTING} from './app.routes';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+// import { NgDropFilesDirective } from './directives/ng-drop-files.directive';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     CargaComponent,
     FotosComponent,
-    NavbarComponent
+    NavbarComponent,
+    // NgDropFilesDirective
   ],
   imports: [
     BrowserModule,
     APP_ROUTING,
-    AngularFireModule.initializeApp(environment.firebase )
+    AngularFireModule.initializeApp(environment.firebase ),
+    AngularFireDatabaseModule
   ],
   providers: [CargaImagenesService],
   bootstrap: [AppComponent]
