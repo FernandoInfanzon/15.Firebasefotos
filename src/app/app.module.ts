@@ -14,6 +14,7 @@ import { APP_ROUTING} from './app.routes';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { NgDropFilesDirective } from './directives/ng-drop-files.directive';
 // import { NgDropFilesDirective } from './directives/ng-drop-files.directive';
 
 
@@ -23,6 +24,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
     CargaComponent,
     FotosComponent,
     NavbarComponent,
+    NgDropFilesDirective,
     // NgDropFilesDirective
   ],
   imports: [
