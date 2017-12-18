@@ -1,7 +1,7 @@
 import { Directive } from '@angular/core';
 
 @Directive({
-  selector: '[appNgDropFiles]'
+  selector: '[NgDropFiles]'
 })
 export class NgDropFilesDirective {
 
